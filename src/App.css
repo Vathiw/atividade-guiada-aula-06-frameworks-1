@@ -1,0 +1,278 @@
+body {
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.09), transparent 32rem),
+    #f1f5f9;
+  color: #334155;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #e2e8f0;
+  backdrop-filter: blur(12px);
+}
+
+.navbar {
+  max-width: 1050px;
+  margin: 0 auto;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.85rem 1.5rem;
+}
+
+.brand {
+  color: #312e81;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 650;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.65rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  transform: translateY(-1px);
+}
+
+.nav-link-active {
+  background-color: #eef2ff;
+  color: #4f46e5;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2.4rem;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 18px 40px -24px rgba(15, 23, 42, 0.35);
+}
+
+.page-container h1 {
+  margin: 0.35rem 0 1rem;
+  color: #1e293b;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.page-container h2 {
+  color: #334155;
+}
+
+.page-container p {
+  line-height: 1.75;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #6366f1;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.lead {
+  max-width: 640px;
+  color: #475569;
+  font-size: 1.12rem;
+}
+
+.primary-button,
+.back-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button {
+  padding: 0.8rem 1.05rem;
+  color: white;
+  background: #4f46e5;
+  border-radius: 0.7rem;
+  box-shadow: 0 10px 22px -12px #4f46e5;
+}
+
+.primary-button:hover,
+.back-link:hover {
+  transform: translateY(-2px);
+}
+
+.back-link {
+  color: #6366f1;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.75rem 0 0;
+}
+
+.product-list li {
+  margin-bottom: 0.9rem;
+}
+
+.product-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  color: #475569;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.7rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.product-list a:hover {
+  border-color: #6366f1;
+  color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -16px rgba(15, 23, 42, 0.5);
+}
+
+.product-list strong,
+.product-list small {
+  display: block;
+}
+
+.product-list small {
+  margin-top: 0.2rem;
+  color: #94a3b8;
+}
+
+.product-price {
+  flex-shrink: 0;
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.product-detail-card,
+.contact-box,
+.info-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.8rem;
+}
+
+.product-detail-card {
+  margin-top: 1.5rem;
+  padding: 1.4rem;
+}
+
+.product-detail-card h2 {
+  margin: 0 0 0.4rem;
+}
+
+.product-detail-card p {
+  margin: 0;
+  color: #4f46e5;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.info-card {
+  padding: 1.2rem;
+}
+
+.info-card h2,
+.info-card p {
+  margin-top: 0;
+}
+
+.info-card p {
+  margin-bottom: 0;
+}
+
+.contact-box {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+}
+
+.contact-box strong,
+.contact-box span {
+  display: block;
+}
+
+.contact-box span {
+  margin-top: 0.3rem;
+  color: #64748b;
+}
+
+.footer {
+  padding: 1.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .page-container {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
